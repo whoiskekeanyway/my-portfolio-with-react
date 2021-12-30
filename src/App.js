@@ -7,8 +7,6 @@ import Contacts from "./components/Contacts";
 
 import ScrollToTop from "react-scroll-to-top";
 import "./App.css";
-
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Projects from "./components/Projects";
 
 function App() {
