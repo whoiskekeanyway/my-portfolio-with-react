@@ -1,0 +1,263 @@
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+body {
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  max-width: 1000px;
+  margin: 0 auto;
+  font-family: "Roboto Slab", serif;
+}
+
+/* Navbar */
+
+.navbar {
+  font-family: "Roboto Slab", serif;
+  font-weight: 600;
+  display: flex;
+  margin: 0 auto;
+  padding-top: 10px;
+  position: fixed;
+  top: 0;
+}
+
+.App-logo {
+  pointer-events: auto;
+  width: 50px;
+  margin-left: 3rem;
+  cursor: pointer;
+}
+
+.App-logo:hover {
+  animation: App-logo-scale 0.5s ease-in;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 5s linear;
+  }
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes App-logo-scale {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.2);
+  }
+}
+
+.nav-list {
+  list-style-type: none;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  margin-left: 5rem;
+}
+
+.list-item {
+  display: inline-block;
+  padding: 20px 10px;
+}
+
+.list-item a {
+  text-decoration: none;
+  color: #ee6352;
+  position: relative;
+}
+
+.list-item a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 0.5px;
+  background: currentColor;
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 250ms ease-in;
+}
+
+.list-item a:hover::after {
+  transform: scaleX(1);
+  transform-origin: left;
+}
+
+.list-item a {
+  color: rgb(12, 94, 218);
+  text-decoration: none;
+  font-weight: 900;
+}
+
+.list-item a:hover {
+  color: rgb(11, 46, 141);
+}
+
+#btn {
+  display: none;
+  position: absolute;
+  right: 10px;
+  top: 7px;
+  padding: 5px;
+  height: 15vmin;
+}
+
+@media all and (max-width: 375px) {
+  .App-logo {
+    pointer-events: none;
+    width: 50px;
+    margin-left: 2rem;
+    margin-top: 1rem;
+  }
+  .navbar {
+    flex-direction: column;
+    position: relative;
+    padding: 5px;
+  }
+  #btn {
+    display: block;
+  }
+
+  .list-item {
+    display: block;
+    padding: 20px 10px;
+  }
+
+  .nav-list {
+    flex-direction: column;
+    height: auto;
+  }
+}
+
+
+/* Contact */
+
+.contact-container {
+  font-family: "Roboto Slab", serif;
+  font-weight: 400;
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 50px;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact {
+  margin: 0 auto;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 25px;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  background-color: whitesmoke;
+  box-shadow: 5px 10px #030a13;
+}
+
+.contact-words {
+  font-size: 2vh;
+  letter-spacing: 2px;
+}
+
+
+@media screen and (max-width: 767px) {
+  .contact {
+    width: 100%;
+  }
+
+  .contact-container {
+    width: 100%;
+    justify-content: center;
+  }
+}
+
+
+/* Footer */
+
+footer {
+  font-weight: 400;
+  padding: 10px;
+  text-align: center;
+  width: 1400px;
+  margin: 0 auto;
+  font-weight: 400;
+  font-size: 1.5rem;
+  position: fixed;
+}
+
+.footerDiv {
+  padding: 5px;
+  text-align: center;
+}
+.copyright a {
+  text-decoration: none;
+  color: steelblue;
+  position: relative;
+}
+
+.designerp {
+  text-decoration: none;
+  color: steelblue;
+  position: relative;
+}
+
+.copyright a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 2px;
+  background: steelblue;
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 250ms ease-in;
+}
+
+.copyright a:hover::after {
+  transform: scaleX(1);
+  transform-origin: left;
+}
+
+.designerp::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 2px;
+  background: steelblue;
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 250ms ease-in;
+}
+
+.designerp:hover::after {
+  transform: scaleX(1);
+  transform-origin: left;
+}
+
+@media screen and (max-width: 767px) {
+  footer {
+    width: 100%;
+  }
+}
