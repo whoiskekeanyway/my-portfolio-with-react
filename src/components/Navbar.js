@@ -1,5 +1,8 @@
 import React from "react";
 import logo from "./images/open-outline.svg";
+import linkedin from "./images/logo-linkedin.svg";
+import github from "./images/logo-github.svg";
+import twitter from "./images/logo-twitter.svg";
 
 export default function Navbar() {
   const [toggleMenu, setToggleMenu] = React.useState(false);
@@ -41,7 +44,13 @@ export default function Navbar() {
               <a href='#contact'>contact </a>
             </li>
             <li className='list-item'>
-              <a href='https://blog.scriptsandtags.com/'>blog</a>
+              <a
+                href='https://blog.scriptsandtags.com/'
+                rel='noreferrer noopener'
+                target='_blank'
+              >
+                blog
+              </a>
             </li>
           </ul>
         )}
@@ -54,6 +63,35 @@ export default function Navbar() {
           alt='logo'
         />
       </nav>
+      <ul className='extra'>
+        <li className='list-item extra'>
+          <a
+            rel='noreferrer noopener'
+            target='_blank'
+            href='https://www.linkedin.com/in/seunogundele/'
+          >
+            <img src={linkedin} className='App-logos' alt='logo' />
+          </a>
+        </li>
+        <li className='list-item extra'>
+          <a
+            rel='noreferrer noopener'
+            target='_blank'
+            href='https://www.twitter.com/scriptsandtags'
+          >
+            <img src={twitter} className='App-logos' alt='logo' />
+          </a>
+        </li>
+        <li className='list-item extra'>
+          <a
+            rel='noreferrer noopener'
+            target='_blank'
+            href='https://github.com/whoiskekeanyway'
+          >
+            <img src={github} className='App-logos' alt='logo' />
+          </a>
+        </li>
+      </ul>
     </div>
   );
 }

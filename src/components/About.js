@@ -1,4 +1,4 @@
-import React from "react";
+import developer from "./images/developer.svg";
 
 export default function About() {
   return (
@@ -35,7 +35,9 @@ export default function About() {
             Postcardwithnotes.com
           </a>
         </p>
+
       </div>
+      <img className='developer' src={developer} alt='developer' />
     </div>
   );
 }

@@ -5,7 +5,8 @@ export default function Project(props) {
     <div className='projects'>
       <img className='project-image' src={props.img} alt='logo' />
 
-      <h3 className='title'>{props.title}</h3>
+      <h3 className='title'>{props.title}
+      </h3>
 
       <div className='description'>
         <p>{props.description}</p>
@@ -16,7 +17,9 @@ export default function Project(props) {
       </div>
       <br />
 
-      <button className='linkBtn'>Demo</button>
+    
+
+
     </div>
   );
 }

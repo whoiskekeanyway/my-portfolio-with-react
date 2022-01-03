@@ -1,9 +1,9 @@
-import React from "react";
 import Project from "./Project";
 import hashtag from "./images/build.svg";
 import camera from "./images/camera.svg";
 import medkit from "./images/medkit.svg";
 import calculator from "./images/calculator.svg";
+import generator from "./images/cog-sharp.svg";
 
 export default function Projects() {
   return (
@@ -30,20 +30,21 @@ export default function Projects() {
         <Project
           img={calculator}
           title='Tip Calculator'
-          description='This project is from front-end-masters; it was easy for me because I had built a similar app from Bootcamp. It made me understand why it matters to create, and it is the best way to learn'
+          description='React app to generate memes. It uses the API to get memes images, and then users can add text of their choice before saving memes. I wrote more about what I learned on my Readme on my Github. '
           techstack='HTML, CSS, JavaScript'
+        />
+        <Project
+          img={generator}
+          title='React Meme Generator'
+          description='This project is from front-end-masters; it was easy for me because I had built a similar app from Bootcamp. It made me understand why it matters to create, and it is the best way to learn'
+          techstack='Reactjs, Netlify'
         />
         <Project
           img={calculator}
           title='The Bull House'
           description='This project is from front-end-masters; it was easy for me because I had built a similar app from Bootcamp. It made me understand why it matters to create, and it is the best way to learn'
           techstack='HTML, CSS, JavaScript'
-        />
-        <Project
-          img={calculator}
-          title='The Bull House'
-          description='This project is from front-end-masters; it was easy for me because I had built a similar app from Bootcamp. It made me understand why it matters to create, and it is the best way to learn'
-          techstack='HTML, CSS, JavaScript'
+         
         />
       </section>
     </div>

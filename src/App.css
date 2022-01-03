@@ -6,7 +6,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  height: 80vh;
   margin: 0 auto;
   font-family: "Roboto Slab", serif;
   max-width: 800px;
@@ -22,12 +22,16 @@
 
 .landingTitle span {
   text-transform: uppercase;
+  font-weight: 900;
+  font-size: 1.5rem;
+  color: steelblue;
 }
 
 .landingParagraph {
   font-family: "Roboto Slab", serif;
   font-weight: 300;
   font-size: 3vh;
+  max-width: 300px;
 }
 
 .scrollContainer {
@@ -61,14 +65,7 @@
     height: auto;
   }
   .landingParagraph {
-    font-size: 4vh;
-  }
-  .landing-page {
-    max-width: 100%;
-    padding: 10px;
-  }
-  .landingMessage {
-    max-width: 100%;
+    font-size: 3vh;
   }
   .scrollDownBtn {
     font-size: 5vw;
@@ -80,11 +77,26 @@
 .about-page {
   font-family: "Roboto Slab", serif;
   display: flex;
+  flex-direction: row-reverse;
   align-items: center;
   justify-content: center;
-  margin: 0 auto;
-  height: 70vh;
+  height: 100vh;
   padding: 2rem;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.developer {
+  flex: 50;
+  width: 300px;
+  margin: 2rem;
+  padding: 2rem;
+  transition: transform 250ms;
+}
+
+.developer:hover {
+  transform: scale(1.1);
+  transition: transform 250ms;
 }
 
 .biography {
@@ -126,7 +138,17 @@
 
 @media screen and (max-width: 375px) {
   .biography {
-    font-size: 3vw;
+    font-size: 5vw;
+  }
+  .developer {
+    width: 350px;
+    margin-bottom: 1rem;
+  }
+  .about-page {
+    flex-direction: column-reverse;
+    max-width: 100%;
+    padding: 1rem;
+    height: auto;
   }
 }
 
@@ -140,6 +162,8 @@
   padding: 2rem;
 }
 
+
+
 .projects {
   flex-basis: 250px;
   box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.25);
@@ -149,14 +173,29 @@
   padding: 13px;
   padding-bottom: 20px;
   background-color: white;
+  border-bottom: 3px solid #4682b4;
+  transition: all ease-in-out 0.5s;
+}
+
+.projects:hover {
+  border-top: 3px solid steelblue;
+  border-bottom: none;
+  transform: scale(0.99);
+  transition: all ease-in-out 0.5s;
 }
 
 .project-image {
-  width: 80%;
+  width: 60%;
   height: auto;
   align-self: center;
   border-radius: 5px;
   object-fit: scale-down;
+  transition: transform 250ms ease-in;
+}
+
+.project-image:hover {
+  transform: scale(0.9);
+  transition: transform 250ms ease-in;
 }
 
 .description {
@@ -166,6 +205,7 @@
   font-weight: 300;
   font-size: 1rem;
   margin-bottom: 1rem;
+  line-height: 1.1rem;
 }
 
 .title {

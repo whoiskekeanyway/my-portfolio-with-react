@@ -10,7 +10,7 @@ export default function Landing() {
         <div className='landingMessage'>
           <h1 className='landingTitle'>
             Hi, My name is Seun,
-            <br /> I am a <span>Web Developer</span>{" "}
+            <br /> I am a <span>Front-end Developer</span>
           </h1>
           <p className='landingParagraph'>
             I design beautiful and functional websites that solve problems using
