@@ -9,11 +9,11 @@
   height: 80vh;
   margin: 0 auto;
   font-family: "Roboto Slab", serif;
-  max-width: 800px;
+  max-width: 1440px;
 }
 
 .landingMessage {
-  max-width: 700px;
+  max-width: 900px;
 }
 
 .landingTitle {
@@ -31,7 +31,7 @@
   font-family: "Roboto Slab", serif;
   font-weight: 300;
   font-size: 3vh;
-  max-width: 300px;
+  max-width: 500px;
 }
 
 .scrollContainer {
@@ -81,16 +81,18 @@
   align-items: center;
   justify-content: center;
   height: 100vh;
-  padding: 2rem;
-  max-width: 800px;
+  padding: 5rem;
+  max-width: 1440px;
   margin: 0 auto;
 }
-
+.about-page div {
+  flex: 50%;
+}
 .developer {
-  flex: 50;
-  width: 300px;
+  flex: 50%;
+  width: 400px;
   margin: 2rem;
-  padding: 2rem;
+  padding: 5rem;
   transition: transform 250ms;
 }
 
@@ -160,12 +162,11 @@
   flex-wrap: wrap;
   gap: 2rem;
   padding: 2rem;
+  max-width: 1440px;
 }
 
-
-
 .projects {
-  flex-basis: 250px;
+  flex-basis: 300px;
   box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.25);
   border-radius: 10px;
   display: flex;
