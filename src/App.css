@@ -3,41 +3,48 @@
 /* Landing Page */
 
 .landing-page {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 80vh;
+  height: 100vh;
+  max-width: 1440px;
   margin: 0 auto;
   font-family: "Roboto Slab", serif;
-  max-width: 1440px;
 }
 
 .landingMessage {
-  max-width: 900px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 2.5vw;
+  font-weight: 900;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .landingTitle {
-  font-size: 3vw;
+  font-size: 4.5vw;
 }
 
 .landingTitle span {
   text-transform: uppercase;
   font-weight: 900;
-  font-size: 1.5rem;
+  font-size: 2.5vw;
   color: steelblue;
 }
 
 .landingParagraph {
   font-family: "Roboto Slab", serif;
   font-weight: 300;
-  font-size: 3vh;
+  font-size: 2vw;
   max-width: 500px;
 }
 
 .scrollContainer {
-  margin-top: 20px;
+  margin-top: 10px;
   transition: transform 250ms;
 }
+
 .scrollContainer:hover {
   transform: translateY(10px);
 }
@@ -59,41 +66,54 @@
 }
 
 @media screen and (max-width: 375px) {
-  .landingTitle {
-    font-size: 7vw;
-    font-weight: 900;
-    height: auto;
-  }
-  .landingParagraph {
-    font-size: 3vh;
-  }
-  .scrollDownBtn {
-    font-size: 5vw;
-  }
+  
 }
 
 /* About Me Page */
 
 .about-page {
-  font-family: "Roboto Slab", serif;
   display: flex;
   flex-direction: row-reverse;
   align-items: center;
   justify-content: center;
   height: 100vh;
-  padding: 5rem;
-  max-width: 1440px;
-  margin: 0 auto;
+  font-family: "Roboto Slab", serif;
 }
 .about-page div {
   flex: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  max-width: 500px;
+  padding: 50px;
+  margin: 0 auto;
+  background-color: whitesmoke;
+  box-shadow: 5px 5px #030a13;
+  transition: all ease-in-out 0.5s;
+  
 }
+.about-page div:hover {
+  box-shadow: 0px 0px 2px 2px #030a13;
+  transition: all ease-in-out 0.5s;
+}
+.about-page div h1 {
+  font-size: 3.5rem;
+  font-weight: 900;
+  margin-bottom: 20px;
+}
+.about-page div p {
+  font-weight: 300;
+  margin-bottom: 20px;
+}
+
+
 .developer {
   flex: 50%;
-  width: 400px;
-  margin: 2rem;
-  padding: 5rem;
   transition: transform 250ms;
+  max-width: 400px;
+  margin: 0 auto;
+
 }
 
 .developer:hover {
@@ -107,7 +127,6 @@
   max-width: 600px;
   margin-bottom: 5px;
   line-height: 2rem;
-  max-width: 400px;
 }
 
 .reference {
@@ -143,12 +162,10 @@
     font-size: 5vw;
   }
   .developer {
-    width: 350px;
     margin-bottom: 1rem;
   }
   .about-page {
     flex-direction: column-reverse;
-    max-width: 100%;
     padding: 1rem;
     height: auto;
   }
@@ -230,24 +247,48 @@
   margin-bottom: 1rem;
 }
 
-.btns {
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-  margin-top: 1rem;
+
+.tech-stack span {
+  margin-right: 1rem;
+  margin-bottom: 1rem;
 }
 
-.linkBtn {
-  padding: 10px 10px;
-  max-width: 200px;
-  font-size: 1rem;
-  font-weight: 900;
-  color: steelblue;
-  text-decoration: none;
-  border: 1px solid steelblue;
+.project-button {
+  min-width: 100px;
+  height: 40px;
+  color: #fff;
+  padding: 5px 10px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  display: inline-block;
+  outline: none;
+  overflow: hidden;
   border-radius: 5px;
-  transition: all 250ms ease-in;
+  border: none;
+  background-color: #3d348b
 }
+.project-button:hover {
+  border-radius: 5px;
+  padding-right: 24px;
+  padding-left:8px;
+}
+.project-button:hover:after {
+  opacity: 1;
+  right: 10px;
+}
+.project-button:after {
+  content: "\00BB";
+  position: absolute;
+  opacity: 0;
+  font-size: 20px;
+  line-height: 40px;
+  top: 0;
+  right: -20px;
+  transition: 0.4s;
+}
+
 
 @media screen and (max-width: 375px) {
 }

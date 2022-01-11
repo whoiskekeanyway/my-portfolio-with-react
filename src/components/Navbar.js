@@ -3,6 +3,7 @@ import logo from "./images/open-outline.svg";
 import linkedin from "./images/logo-linkedin.svg";
 import github from "./images/logo-github.svg";
 import twitter from "./images/logo-twitter.svg";
+import { Link } from "react-router-dom";
 
 export default function Navbar() {
   const [toggleMenu, setToggleMenu] = React.useState(false);
@@ -37,12 +38,15 @@ export default function Navbar() {
             <li className='list-item'>
               <a href='#aboutme'>about </a>
             </li>
+
             <li className='list-item'>
               <a href='#experience'>experience </a>
             </li>
+            <Link to='/projects'>Expenses</Link>
             <li className='list-item'>
               <a href='#contact'>contact </a>
             </li>
+
             <li className='list-item'>
               <a
                 href='https://blog.scriptsandtags.com/'
