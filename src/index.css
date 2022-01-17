@@ -11,7 +11,7 @@ body {
   margin: 0;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  max-width: 1000px;
+  max-width: 1440px;
   margin: 0 auto;
   font-family: "Roboto Slab", serif;
 }
@@ -26,6 +26,7 @@ body {
   padding-top: 10px;
   position: fixed;
   top: 0;
+  left: 100px;
 }
 
 .App-logo {
@@ -62,7 +63,6 @@ body {
     transform: scale(1.2);
   }
 }
-
 
 .nav-list {
   list-style-type: none;
@@ -129,6 +129,7 @@ body {
   justify-content: center;
   align-items: center;
   justify-content: flex-end;
+  margin-right: 2rem;
 }
 
 .App-logos {

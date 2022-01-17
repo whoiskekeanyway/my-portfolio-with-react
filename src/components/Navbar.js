@@ -8,12 +8,17 @@ export default function Navbar() {
   const [toggleMenu, setToggleMenu] = React.useState(false);
   const [screenWidth, setScreenWidth] = React.useState(window.innerWidth);
 
+
+  // toggle between two images for the menu bar in mobile devices
   const menuBar = toggleMenu ? "close-outline.svg" : "menu.svg";
 
+
+  // toggle the menu bar
   const toggleNav = () => {
     setToggleMenu(!toggleMenu);
   };
 
+  // 
   React.useEffect(() => {
     const changeWidth = () => {
       setScreenWidth(window.innerWidth);

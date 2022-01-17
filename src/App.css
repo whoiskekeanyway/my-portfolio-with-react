@@ -3,35 +3,50 @@
 /* Landing Page */
 
 .landing-page {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 80vh;
-  margin: 0 auto;
   font-family: "Roboto Slab", serif;
-  max-width: 800px;
+  max-width: 1200px;
+  margin: 0 auto;
+  height: 100vh;
 }
 
 .landingMessage {
-  max-width: 700px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.landing {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(157, 188, 247);
+  width: 200px;
+  height: 200px;
+  margin: 0 auto;
+  border-radius: 50%;
 }
 
 .landingTitle {
-  font-size: 3vw;
-}
-
-.landingTitle span {
-  text-transform: uppercase;
+  font-size: 2vw;
   font-weight: 900;
-  font-size: 1.5rem;
-  color: steelblue;
+  margin-top: 1rem;
+
 }
 
+.landingSubtitle {
+  font-size: 1.5vw;
+  font-weight: 400;
+
+}
 .landingParagraph {
   font-family: "Roboto Slab", serif;
-  font-weight: 300;
-  font-size: 3vh;
-  max-width: 300px;
+  font-weight: 400;
+  font-size: 1.5vw;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
 }
 
 .scrollContainer {
@@ -43,7 +58,6 @@
 }
 
 .scrollDownBtn {
-  display: flex;
   align-items: center;
   width: 100%;
   font-size: 1.9vw;
@@ -56,6 +70,12 @@
 .scrollicon {
   width: 30px;
   height: auto;
+}
+
+.scrollicons {
+  width: 150px;
+  height: auto;
+  object-fit: contain;
 }
 
 @media screen and (max-width: 375px) {
@@ -161,8 +181,6 @@
   gap: 2rem;
   padding: 2rem;
 }
-
-
 
 .projects {
   flex-basis: 250px;
