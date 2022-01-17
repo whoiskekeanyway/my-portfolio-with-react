@@ -3,7 +3,8 @@ import developer from "./images/developer.svg";
 export default function About() {
   return (
     <div className='about-page'>
-      <div>
+
+      <div className="words-div">
         <p className='biography'>
           My name is ‘Seun, a web developer, photographer, and a lover of dogs
           and plants. My passion for web development stems from my background in
@@ -35,9 +36,16 @@ export default function About() {
             Postcardwithnotes.com
           </a>
         </p>
-
       </div>
-      <img className='developer' src={developer} alt='developer' />
+
+      <div className="image-div">
+  
+        <img className='developer'
+          src={developer}
+          alt='developer' />
+        
+      </div>
+
     </div>
   );
 }

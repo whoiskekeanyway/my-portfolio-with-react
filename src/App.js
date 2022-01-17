@@ -19,7 +19,8 @@ function App() {
         <Main />
         <section id='aboutpage'>
           <About />
-        </section>
+      </section>
+      <hr />
         <Projects />
 
         <Contacts />

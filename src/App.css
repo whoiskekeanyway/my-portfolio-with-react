@@ -15,6 +15,7 @@
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
+  padding: 3rem;
 }
 
 .landing {
@@ -22,7 +23,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: rgb(157, 188, 247);
+  background-color: #9dbcf7;
   width: 200px;
   height: 200px;
   margin: 0 auto;
@@ -33,13 +34,11 @@
   font-size: 2vw;
   font-weight: 900;
   margin-top: 1rem;
-
 }
 
 .landingSubtitle {
   font-size: 1.5vw;
   font-weight: 400;
-
 }
 .landingParagraph {
   font-family: "Roboto Slab", serif;
@@ -61,7 +60,7 @@
   align-items: center;
   width: 100%;
   font-size: 1.9vw;
-  color: steelblue;
+  color: #4682b4;
   text-decoration: none;
   letter-spacing: 1px;
   font-weight: 700;
@@ -79,13 +78,25 @@
 }
 
 @media screen and (max-width: 375px) {
+  .landingMessage {
+    width: 100%;
+    padding: 2rem;
+  }
   .landingTitle {
     font-size: 7vw;
     font-weight: 900;
-    height: auto;
+  }
+
+  .landingSubtitle {
+    font-size: 4vw;
+    font-weight: 900;
   }
   .landingParagraph {
-    font-size: 3vh;
+    font-family: "Roboto Slab", serif;
+    font-weight: 900;
+    font-size: 3.5vw;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
   }
   .scrollDownBtn {
     font-size: 5vw;
@@ -101,31 +112,21 @@
   align-items: center;
   justify-content: center;
   height: 100vh;
-  padding: 2rem;
-  max-width: 800px;
+  max-width: 1440px;
   margin: 0 auto;
 }
 
-.developer {
-  flex: 50;
-  width: 300px;
-  margin: 2rem;
-  padding: 2rem;
-  transition: transform 250ms;
-}
-
-.developer:hover {
-  transform: scale(1.1);
-  transition: transform 250ms;
+.words-div {
+  flex: 50%;
+  max-width: 600px;
+  padding: 0.5rem;
 }
 
 .biography {
   font-weight: 400;
-  font-size: 1vw;
-  max-width: 600px;
+  font-size: 20px;
   margin-bottom: 5px;
   line-height: 2rem;
-  max-width: 400px;
 }
 
 .reference {
@@ -156,13 +157,33 @@
   transform-origin: left;
 }
 
+.image-div {
+  flex: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 600px;
+}
+
+.developer {
+  max-width: 450px;
+  transition: transform 250ms;
+}
+
+.developer:hover {
+  transform: scale(1.1);
+  transition: transform 250ms;
+}
+
 @media screen and (max-width: 375px) {
-  .biography {
-    font-size: 5vw;
+  .words-div {
+    padding: 0.5rem;
   }
   .developer {
     width: 350px;
-    margin-bottom: 1rem;
+    margin-bottom: 3rem;
+    padding: auto;
   }
   .about-page {
     flex-direction: column-reverse;
@@ -178,25 +199,28 @@
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  gap: 2rem;
-  padding: 2rem;
+  gap: 50px;
+  padding: 3rem;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 .projects {
-  flex-basis: 250px;
+  flex-basis:300px;
+  height: auto;
   box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.25);
   border-radius: 10px;
   display: flex;
   flex-direction: column;
   padding: 13px;
   padding-bottom: 20px;
-  background-color: white;
+  background-color: rgb(233, 233, 233);
   border-bottom: 3px solid #4682b4;
   transition: all ease-in-out 0.5s;
 }
 
 .projects:hover {
-  border-top: 3px solid steelblue;
+  border-top: 3px solid #4682b4;
   border-bottom: none;
   transform: scale(0.99);
   transition: all ease-in-out 0.5s;
@@ -206,7 +230,7 @@
   width: 60%;
   height: auto;
   align-self: center;
-  border-radius: 5px;
+  margin-bottom: 20px;
   object-fit: scale-down;
   transition: transform 250ms ease-in;
 }

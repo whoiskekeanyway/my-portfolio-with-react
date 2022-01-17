@@ -16,10 +16,7 @@ export default function Project(props) {
         <ul> {props.techstack} </ul>
       </div>
       <br />
-
-    
-
-
+       
     </div>
   );
 }

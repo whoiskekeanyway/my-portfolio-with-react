@@ -20,6 +20,7 @@ export default function Projects() {
           title='Photograher Portfolio'
           description=' My photography portfolio; I used my website for photography to practice. I made a carousel with vanilla javascript. It made loading many photos on the website easier without taking so much space.'
           techstack='HTML, CSS, JavaScript'
+
         />
         <Project
           img={medkit}
@@ -44,7 +45,6 @@ export default function Projects() {
           title='The Bull House'
           description='This project is from front-end-masters; it was easy for me because I had built a similar app from Bootcamp. It made me understand why it matters to create, and it is the best way to learn'
           techstack='HTML, CSS, JavaScript'
-         
         />
       </section>
     </div>

@@ -18,6 +18,8 @@ export default function Navbar() {
     setToggleMenu(!toggleMenu);
   };
 
+
+
   // 
   React.useEffect(() => {
     const changeWidth = () => {
