@@ -152,7 +152,7 @@ body {
   height: 15vmin;
 }
 
-@media all and (max-width: 375px) {
+@media all and (max-width: 450px) {
   .App-logo {
     pointer-events: none;
     width: 50px;
@@ -224,7 +224,7 @@ body {
   letter-spacing: 2px;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 450px) {
   .contact {
     width: 100%;
   }
@@ -242,6 +242,7 @@ body {
   text-align: center;
   max-width: 1200px;
   margin: 0 auto;
+  padding: 20px;
 }
 
 footer {
@@ -251,7 +252,6 @@ footer {
   width: 1400px;
   margin: 0 auto;
   font-weight: 400;
-  font-size: 1.5rem;
   position: fixed;
 }
 
@@ -259,12 +259,15 @@ footer {
   text-decoration: none;
   color: steelblue;
   position: relative;
+  font-size: 1.5rem;
+
 }
 
 .designerp {
   text-decoration: none;
   color: steelblue;
   position: relative;
+  font-size: 1.5rem;
 }
 
 .copyright a::after {
@@ -303,7 +306,7 @@ footer {
   transform-origin: left;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 450px) {
   footer {
     width: 100%;
   }

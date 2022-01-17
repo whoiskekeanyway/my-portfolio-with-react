@@ -77,7 +77,7 @@
   object-fit: contain;
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 450px) {
   .landingMessage {
     width: 100%;
     padding: 2rem;
@@ -176,7 +176,7 @@
   transition: transform 250ms;
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 450px) {
   .words-div {
     padding: 0.5rem;
   }
@@ -203,6 +203,7 @@
   padding: 3rem;
   max-width: 1200px;
   margin: 0 auto;
+  height: cacl(100vh + 30vh);
 }
 
 .projects {
@@ -290,5 +291,5 @@
   transition: all 250ms ease-in;
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 450px) {
 }
