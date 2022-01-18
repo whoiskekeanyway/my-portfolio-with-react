@@ -1,8 +1,12 @@
 import React from 'react'
+// import { gsap } from "gsap";
 
 export default function Contacts() {
+
+  
+
     return (
-      <div className='contact-container'>
+      <div  className='contact-container'>
         <div className='contact' id='contact'>
           <p className='contact-words'>
             I'm looking for an entry-level front-end role with mentorship and
@@ -13,9 +17,7 @@ export default function Contacts() {
             and let’s chat.
           </p>
 
-          <section className='social-icon'>
-           
-          </section>
+          <section className='social-icon'></section>
         </div>
       </div>
     );
