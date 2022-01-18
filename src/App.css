@@ -207,7 +207,7 @@
 }
 
 .projects {
-  flex-basis:300px;
+  flex-basis: 300px;
   height: auto;
   box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.25);
   border-radius: 10px;
@@ -293,3 +293,68 @@
 
 @media screen and (max-width: 450px) {
 }
+
+.blog-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: no-wrap;
+  gap: 50px;
+  padding: 3rem;
+  max-width: 1000px;
+  margin: 0 auto;
+  height: 80vh;
+}
+
+.card {
+ flex-basis: 350px;
+  height: 500px;
+  box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  padding: 13px;
+  padding-bottom: 20px;
+  background-color: rgb(233, 233, 233);
+  border-bottom: 3px solid #4682b4;
+  transition: all ease-in-out 0.5s;
+}
+
+.img-responsive {
+  width: 100%;
+  border-radius: 5px;
+  object-fit: scale-down;
+}
+
+.title {
+  color: steelblue;
+  font-size: 18px;
+  font-weight: 900;
+  margin-top: 1.5rem;
+text-align: center;
+}
+
+.brief {
+  color: steelblue;
+  font-size: 16px;
+  text-decoration: none;
+  margin-top: 0.5rem;
+  width: 70%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+	a{
+    text-decoration: none;
+    color:#1d1d1d;
+}
+
+.intro-to-blog {
+  text-align: center;
+  font-size: 2.5rem;
+  writing-mode: vertical-rl;
+  text-orientation: upright;
+}
+
+
