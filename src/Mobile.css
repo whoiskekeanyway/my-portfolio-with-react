@@ -1,0 +1,123 @@
+@media only screen and (max-width: 450px) {
+  .App-logo {
+    cursor: pointer;
+    max-width: 100px;
+    margin: 0 auto;
+    margin-left: 2rem;
+    margin-top: 2.5rem;
+    display: inline;
+  }
+
+  .logo-link {
+    display: inline-block;
+    width: 30%;
+    align-items: center;
+  }
+
+  .navbar {
+    flex-direction: column;
+    position: relative;
+    padding: 5px;
+
+  }
+  .menu div {
+    margin-bottom: 5px;
+  }
+  .menu {
+    display: block;
+    position: absolute;
+    right: 15px;
+    top: 35px;
+
+  }
+
+  .list-item {
+    display: block;
+    padding: 20px 10px;
+  }
+
+  .nav-list {
+    position: relative;
+    list-style-type: none;
+    margin: 0 auto;
+    text-align: center;
+    padding: 1%;
+    margin-top: 8%;
+    display: none;
+  }
+
+  .list-item.contact a {
+    background-color: rgb(231, 231, 17);
+    border: none;
+    color: black;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 16px;
+  }
+
+  .active {
+    display: block;
+  }
+
+  .extra {
+    display: none;
+  }
+}
+
+
+.blog-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: no-wrap;
+  gap: 50px;
+  padding: 3rem;
+  max-width: 1000px;
+  margin: 0 auto;
+  height: 80vh;
+}
+
+
+@media screen and (max-width: 450px) {
+  .landingMessage {
+    width: 100%;
+    padding: 2rem;
+  }
+  .landingTitle {
+    font-size: 7vw;
+    font-weight: 900;
+  }
+
+  .landingSubtitle {
+    font-size: 4vw;
+    font-weight: 900;
+  }
+  .landingParagraph {
+    font-family: "Roboto Slab", serif;
+    font-weight: 900;
+    font-size: 3.5vw;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+  .scrollDownBtn {
+    font-size: 5vw;
+  }
+
+  .hero-images {
+    display: none;
+  }
+  .welcome {
+    display: none;
+  }
+}
+
+
+
+
+
+

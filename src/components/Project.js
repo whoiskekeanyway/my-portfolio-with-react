@@ -2,7 +2,7 @@ import React from 'react'
 
 export default function Project(props) {
   return (
-    <div className='projects'>
+    <div className='project'>
       <img className='project-image' src={props.img} alt='logo' />
 
       <h3 className='title'>{props.title}

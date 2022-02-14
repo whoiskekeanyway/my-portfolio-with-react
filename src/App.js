@@ -1,40 +1,25 @@
-import React from "react";
+import "./App.css";
 
-import Main from "./components/Main";
-import About from "./components/About";
-
-import Footer from "./components/Footer";
 import Navbar from "./components/Navbar";
-import Contacts from "./components/Contacts";
+import LandingPage from "./components/LandingPage";
+import About from "./components/About";
 import Blog from "./components/Blog";
+import Projects from "./components/Projects";
+import Contacts from "./components/Contacts";
+import Footer from "./components/Footer";
 
 import ScrollToTop from "react-scroll-to-top";
-import "./App.css";
-import Projects from "./components/Projects";
-
-
-
-
 
 function App() {
-
-
   return (
     <div className='App'>
       <ScrollToTop smooth color='steelblue' />
-
       <Navbar />
-      <Main />
-      <section id='aboutpage'>
-        <About />
-      </section>
-      <hr />
+      <LandingPage />
+      <About />
       <Projects />
-      <hr />
       <Blog />
-      <hr />
       <Contacts />
-      <hr />
       <Footer />
     </div>
   );
