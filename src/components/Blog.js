@@ -38,7 +38,7 @@ class Blog extends React.Component {
     });
     const ApiResponse = await response.json();
 
-   // console.log(ApiResponse.data.user.publication.posts);
+    // console.log(ApiResponse.data.user.publication.posts);
     this.setState({
       posts: ApiResponse.data.user.publication.posts,
       loading: false,
@@ -54,17 +54,19 @@ class Blog extends React.Component {
       );
 
     return (
-      <div>
+      <div id='blog' className='blogs'>
         <div className='blog-container'>
           <h1 className='intro-to-blog'>Blog Posts</h1>
-          {this.state.posts.map((post, index) => (
-            <a
-              key={index}
-              href={`https://blog.scriptsandtags.com/${post.slug}`}
-            >
-              <Post post={post} />
-            </a>
-          ))}
+          <div className='blog-post'>
+            {this.state.posts.map((post, index) => (
+              <a
+                key={index}
+                href={`https://blog.scriptsandtags.com/${post.slug}`}
+              >
+                <Post post={post} />
+              </a>
+            ))}
+          </div>
         </div>
       </div>
     );

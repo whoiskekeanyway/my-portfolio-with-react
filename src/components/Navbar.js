@@ -5,29 +5,35 @@ import github from "./images/logo-github.svg";
 import twitter from "./images/logo-twitter.svg";
 
 export default function Navbar() {
+  const openInNewTab = (url) => {
+    const newWindow = window.open(url, "_blank", "noopener,noreferrer");
+    if (newWindow) newWindow.opener = null;
+  };
+
   const [toggleMenu, setToggleMenu] = React.useState(false);
   const [screenWidth, setScreenWidth] = React.useState(window.innerWidth);
 
-
   // toggle between two images for the menu bar in mobile devices
+  // ? is a ternary operator
+  // : is a ternary operator
   const menuBar = toggleMenu ? "close-outline.svg" : "menu.svg";
-
 
   // toggle the menu bar
   const toggleNav = () => {
     setToggleMenu(!toggleMenu);
   };
 
-
-
-  // 
+  //
   React.useEffect(() => {
+    // Screen size change event listener
+    // it will store the screen size in the state variable screenWidth and update it
     const changeWidth = () => {
       setScreenWidth(window.innerWidth);
     };
 
     window.addEventListener("resize", changeWidth);
 
+    // remove the event listener when the component is unmounted
     return () => {
       window.removeEventListener("resize", changeWidth);
     };
@@ -42,7 +48,7 @@ export default function Navbar() {
         {(toggleMenu || screenWidth > 500) && (
           <ul className='nav-list'>
             <li className='list-item'>
-              <a href='#aboutme'>about </a>
+              <a href='#bio'>about </a>
             </li>
             <li className='list-item'>
               <a href='#experience'>experience </a>
@@ -52,26 +58,28 @@ export default function Navbar() {
             </li>
             <li className='list-item'>
               <a
-                href='https://blog.scriptsandtags.com/'
+                onClick={() => openInNewTab("https://blog.scriptsandtags.com/")}
                 rel='noreferrer noopener'
                 target='_blank'
+                id='blog'
               >
                 blog
               </a>
             </li>
           </ul>
         )}
-
-        <img
-          onClick={toggleNav}
-          src={`./${menuBar}`}
-          id='btn'
-          className=''
-          alt='logo'
-        />
       </nav>
+
+      <img
+        onClick={toggleNav}
+        src={`./${menuBar}`}
+        id='btn'
+        className=''
+        alt='logo'
+      />
+
       <ul className='extra'>
-        <li className='list-item extra'>
+        <li className='list-extra'>
           <a
             rel='noreferrer noopener'
             target='_blank'
@@ -80,7 +88,7 @@ export default function Navbar() {
             <img src={linkedin} className='App-logos' alt='logo' />
           </a>
         </li>
-        <li className='list-item extra'>
+        <li className='list-extra'>
           <a
             rel='noreferrer noopener'
             target='_blank'
@@ -89,7 +97,7 @@ export default function Navbar() {
             <img src={twitter} className='App-logos' alt='logo' />
           </a>
         </li>
-        <li className='list-item extra'>
+        <li className='list-extra'>
           <a
             rel='noreferrer noopener'
             target='_blank'
