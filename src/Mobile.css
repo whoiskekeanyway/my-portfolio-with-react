@@ -1,3 +1,32 @@
+@media screen and (max-width: 450px) {
+  body {
+    overflow-x: hidden;
+  }
+
+  .extra {
+    display: none;
+  }
+  #btn {
+    display: block;
+    margin-top: 1rem;
+  }
+
+  .navbar {
+    position: initial;
+  }
+  .nav-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    background-color: #ee6352;
+    margin: 0 auto;
+    margin-top: 7rem;
+    z-index: 1;
+  }
+}
+
 @media only screen and (max-width: 450px) {
   .App-logo {
     cursor: pointer;
@@ -18,7 +47,6 @@
     flex-direction: column;
     position: relative;
     padding: 5px;
-
   }
   .menu div {
     margin-bottom: 5px;
@@ -28,7 +56,6 @@
     position: absolute;
     right: 15px;
     top: 35px;
-
   }
 
   .list-item {
@@ -68,7 +95,6 @@
   }
 }
 
-
 .blog-container {
   display: flex;
   flex-direction: column;
@@ -82,42 +108,126 @@
   height: 80vh;
 }
 
-
 @media screen and (max-width: 450px) {
   .landingMessage {
     width: 100%;
-    padding: 2rem;
-  }
-  .landingTitle {
-    font-size: 7vw;
-    font-weight: 900;
-  }
-
-  .landingSubtitle {
-    font-size: 4vw;
-    font-weight: 900;
-  }
-  .landingParagraph {
-    font-family: "Roboto Slab", serif;
-    font-weight: 900;
-    font-size: 3.5vw;
-    margin-top: 1rem;
-    margin-bottom: 1rem;
-  }
-  .scrollDownBtn {
-    font-size: 5vw;
-  }
-
-  .hero-images {
-    display: none;
-  }
-  .welcome {
-    display: none;
+    padding: 0.5rem;
   }
 }
 
+/* Project Page  */
+@media screen and (min-width: 320px) and (max-width: 786px) {
+  .projects {
+    padding: 0.5rem;
+    padding-bottom: 3rem;
+  }
+  .projects-container {
+    padding: 0.5rem;
+  }
+  .project-intro {
+    font-family: "Roboto Slab", serif;
+    font-weight: 900;
+    text-align: center;
+    font-size: 30px;
+    line-height: 2.5rem;
+    padding-top: 2.5rem;
+  }
+}
+
+/* Landing Page  */
+
+@media screen and (max-width: 450px) {
+  .hero {
+ 
+  height: 50vh;
+
+}
+  .container {
+    height: 100vh;
+  }
+  .hero-inner {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    gap: 100px;
+  }
+  h1 {
+    font-size: 30px;
+    text-align: center;
+  }
+
+  .scrollDownBtn {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  font-family: "Genos", sans-serif;
+  font-weight: 600;
+  font-size: 24px;
+  color: orangered;
+  text-decoration: none;
+  letter-spacing: 1px;
+}
 
 
+  .hero-paragraph {
+    font-family: "Roboto Slab", serif;
+    font-weight: 400;
+    text-align: center;
+    font-size: 24px;
+    width: 100%;
+  }
 
 
+  .hero-images {
+    width: 150px;
+    height: 100px;
+    position: relative;
+  }
 
+  .hero-images {
+ display: none;
+}
+ 
+}
+
+/* About me Page */
+
+@media screen and (max-width: 450px) {
+  .about {
+    height: auto;
+  }
+  .about-page {
+    flex-direction: column-reverse;
+    padding: 0.5rem;
+  }
+  .words-div {
+    padding: 0.5rem;
+  }
+
+  .biography {
+    font-size: 18px;
+    line-height: 2rem;
+  }
+}
+
+/* Blog Page */
+@media screen and (max-width: 500px) {
+  .blogs {
+    height: auto;
+    padding-top: 2rem;
+    padding-bottom: 3rem;
+  }
+  .blog-container {
+    height: auto;
+    padding: 1rem;
+  }
+  .blog-post {
+    flex-direction: column;
+    gap: 50px;
+    padding: 0.5rem;
+  }
+  .card {
+    width: 100%;
+  }
+}

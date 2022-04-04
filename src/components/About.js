@@ -45,12 +45,12 @@ export default function About() {
 
   return (
     <div className='about'>
-      <div id='bio' className='about-page'>
-        <div className='image-div' ref={(el) => (image = el)}>
+      <section id='bio' className='about-page'>
+        <section className='image-div' ref={(el) => (image = el)}>
           <img className='developer' src={developer} alt='developer' />
-        </div>
+        </section>
 
-        <div className='words-div' ref={(el) => (paragraph = el)}>
+        <section className='words-div' ref={(el) => (paragraph = el)}>
           <p className='biography'>
             My name is ‘Seun, a web developer, photographer, and a lover of dogs
             and plants. My passion for web development stems from my background
@@ -84,8 +84,8 @@ export default function About() {
               postcardwithnotes.com
             </a>
           </p>
-        </div>
-      </div>
+        </section>
+      </section>
     </div>
   );
 }
