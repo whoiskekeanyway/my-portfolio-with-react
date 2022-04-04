@@ -14,6 +14,19 @@
   <meta name="KeyWords" content=" Photography, Web Developer , Javascript, Midrand, South Africa, Johannesburg" />
   <meta name="robots" content="follow" />
 
+
+  <meta name="google-site-verification" content="10vq-IpeVl2NHpUtxWAdxjvzid7Y0FIHQ03rtYK2Zz8" />
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-CZTF5QNGCB"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'G-CZTF5QNGCB');
+  </script>
+
   <link rel="canonical" href="https://scriptsandtags.com" />
   <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
   <!--
@@ -34,9 +47,16 @@
 </head>
 
 <body>
+  <form name='portfolio-form' netlify netlify-honetpot="bot-field" action="/" hidden>
+
+    <input type='text' name='name' />
+    <input type='text' name='email' />
+    <textarea className='textarea' name='message'></textarea>
+
+  </form>
   <noscript>You need to enable JavaScript to run this app.</noscript>
   <div id="root"></div>
-  <!--
+  <!-- 
       This HTML file is a template.
       If you open it directly in the browser, you will see an empty page.
 

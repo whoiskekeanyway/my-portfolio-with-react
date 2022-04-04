@@ -39,7 +39,7 @@ export default function Navbar() {
     };
   }, []);
   return (
-    <div>
+    <div className='outside-navbar'>
       <nav className='navbar'>
         <a href='index'>
           <img src={logo} className='App-logo' alt='logo' />
@@ -70,14 +70,6 @@ export default function Navbar() {
         )}
       </nav>
 
-      <img
-        onClick={toggleNav}
-        src={`./${menuBar}`}
-        id='btn'
-        className=''
-        alt='logo'
-      />
-
       <ul className='extra'>
         <li className='list-extra'>
           <a
@@ -107,6 +99,14 @@ export default function Navbar() {
           </a>
         </li>
       </ul>
+
+      <img
+        onClick={toggleNav}
+        src={`./${menuBar}`}
+        id='btn'
+        className=''
+        alt='logo'
+      />
     </div>
   );
 }

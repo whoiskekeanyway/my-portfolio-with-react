@@ -82,53 +82,75 @@ export default function LandingPage() {
 
   return (
     <div className='hero' ref={(el) => (app = el)}>
+
       <div className='container'>
+
         <div className='hero-inner'>
+
           <div className='hero-content'>
+
             <div className='hero-content-inner' ref={(el) => (content = el)}>
+
               <h1 className='welcome-note'>
+
                 <div className='hero-content-line'>
                   <div className='hero-content-line-inner'>
                     Hello, I am Seun
                   </div>
                 </div>
+
                 <div className='hero-content-line'>
                   <div className='hero-content-line-inner'>
                     I`m a front-end developer
                   </div>
                 </div>
+
                 <div className='hero-content-line'>
                   <div className='hero-content-line-inner'>
                     and visual storyteller.
                   </div>
                 </div>
+
               </h1>
+
               <p className='hero-paragraph'>
                 I will build beautiful and functional website that will drive up
                 your reach and sales
               </p>
+
               <div className='btn-row'>
+
                 <a className='scrollDownBtn' href='#experience'>
-                  view my work
+                  view my work{" "}
                   <img alt='' className='scrollicon' src={scrollDown} />
                 </a>
+
               </div>
+
               <div className='arrow-row'>
                 <img className='arrow' src={svgarrow} alt='arrow' />
               </div>
+
             </div>
+
           </div>
+
           <div className='hero-images'>
+
             <div ref={el} className='hero-images-inner'>
+
               <div className='hero-image three'>
                 <img className='phonehand' src={phonehand} alt='girl' />
               </div>
+
               <div className='hero-image one'>
                 <img className='computer' src={computer} alt='girl' />
               </div>
+
               <div className='hero-image four'>
                 <img className='article' src={article} alt='boy' />
               </div>
+
               <div className='hero-image five'>
                 <img className='photo' src={photo} alt='boy' />
               </div>
@@ -138,13 +160,14 @@ export default function LandingPage() {
                   <img className='document' src={document} alt='boy' />
                 </div>
               </section>
+
             </div>
           </div>
+
         </div>
+
       </div>
-      <div className='hero-image-seven'>
-        <img className='welcome' src={welcome} alt='boy' />
-      </div>
+
     </div>
   );
 }

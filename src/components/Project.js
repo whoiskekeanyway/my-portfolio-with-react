@@ -1,22 +1,21 @@
-import React from 'react'
-
 export default function Project(props) {
   return (
     <div className='project'>
-      <img className='project-image' src={props.img} alt='logo' />
+      <section className='projects-links-section'>
+        <h3 className='title'>{props.title}</h3>
+        <img className='project-image' src={props.img} alt='logo' />
+      </section>
 
-      <h3 className='title'>{props.title}
-      </h3>
+      <section className='project-words-section'>
+        <p className='description'>{props.description}</p>
+        <p className='tech-stack'> {props.techstack} </p>
 
-      <div className='description'>
-        <p>{props.description}</p>
-      </div>
-
-      <div className='tech-stack'>
-        <ul> {props.techstack} </ul>
-      </div>
-      <br />
-       
+        <section className='project-links'>
+          <a> {props.link} </a>
+          <a> {props.livelink} </a>
+        </section>
+        
+      </section>
     </div>
   );
 }

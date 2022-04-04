@@ -1,25 +1,24 @@
 import React from "react";
 
 export default function Footer() {
+  const openInNewTab = (url) => {
+    const newWindow = window.open(url, "_blank", "noopener,noreferrer");
+    if (newWindow) newWindow.opener = null;
+  };
   return (
     <div className='footer'>
       <div className='footerDiv'>
         <p className='copyright'>
-          {" "}
-          &copy; <span className='year'></span>{" "}
-          <a href='#aboutme'>Seun Ogundele</a> <br /> All Rights Reserved
+          &copy; <span className='year'></span>
+          All Rights Reserved <a href='/'>Seun Ogundele</a>
         </p>
-        <p
-          className='designer'
-          href='https://scriptsandtags.com'
-          rel='noopener'
-          target='blank'
-          aria-hidden='true'
+
+        <a
+          onClick={() => openInNewTab(`https://www.pixelsinframe.com/`)}
+          className='designerp'
         >
-          <a href='www.scriptsandtags.com' className='designerp'>
-            Design by scriptsandtags
-          </a>
-        </p>
+          made with love by pixelsinframe.com
+        </a>
       </div>
     </div>
   );
