@@ -7,7 +7,6 @@ import generator from "./images/cog-sharp.svg";
 import { Link } from "react-router-dom";
 
 export default function Projects() {
-
   const openInNewTab = (url) => {
     const newWindow = window.open(url, "_blank", "noopener,noreferrer");
     if (newWindow) newWindow.opener = null;
@@ -16,13 +15,13 @@ export default function Projects() {
     <div id='experience' className='projects'>
       <div className='projects-container'>
         <p className='project-intro'>
-          These are some of the projects i have worked on, I have more on my 
-           <a
+          These are some of the projects i have worked on, I have more on my
+          <a
             onClick={() => openInNewTab("https://github.com/whoiskekeanyway")}
             className='github-reference'
             aria-hidden='true'
             rel='noopener'
-          > 
+          >
             github
           </a>
           profile

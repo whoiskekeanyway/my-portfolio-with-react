@@ -28,7 +28,6 @@ export default function Contacts() {
           data-netlify='true'
           className='social-icon'
         >
-          <input type='hidden' name='form-name' value='portfolio-form' />
           <label for='fname'> Name</label>
           <input type='hidden' name='form-name' value='contact-form' />
           <input type='text' placeholder='Enter Your name' name='name' />
