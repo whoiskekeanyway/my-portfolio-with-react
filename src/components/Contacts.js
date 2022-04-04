@@ -28,12 +28,13 @@ export default function Contacts() {
           data-netlify='true'
           className='social-icon'
         >
+          <input type='hidden' name='form-name' value='portfolio-form' />
           <label for='fname'> Name</label>
           <input type='hidden' name='form-name' value='contact-form' />
           <input type='text' placeholder='Enter Your name' name='name' />
           <label for='lname'>Email Address</label>
           <input type='text' placeholder='Enter Your email' name='email' />
-          <label class='howcanwehelplabel' for='subject'>
+          <label  for='subject'>
             Message?
           </label>
           <textarea
@@ -43,7 +44,6 @@ export default function Contacts() {
           ></textarea>
           <button className='submit-button'>Submit</button>
         </form>
-        
       </section>
     </div>
   );
